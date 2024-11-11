@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addtask"
+        android:icon="@drawable/ic_action_add"
+        android:title="Add Task" />
+
+    <item
+        android:id="@+id/activetask"
+        android:icon="@drawable/ic_action_cmplt"
+        android:title="Active Task" />
+
+    <item
+        android:id="@+id/cmplttask"
+        android:icon="@drawable/ic_action_cmpltdtask"
+        android:title="Completed" />
+
+
+
+</menu>
