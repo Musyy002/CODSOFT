@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="370dp"
+        android:layout_height="70dp"
+        android:background="#FFFF"
+        android:clipToPadding="true"
+        android:minHeight="?attr/actionBarSize"
+        android:paddingEnd="35dp"
+        android:paddingBottom="15dp"
+        android:theme="?attr/actionBarTheme"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:menu="@menu/menu"
+        app:title="The Quote App"
+        app:titleTextColor="#c6302c" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/quoteCard"
+        android:layout_width="338dp"
+        android:layout_height="209dp"
+        android:layout_margin="16dp"
+        android:backgroundTint="#ffafaf"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <TextView
+                android:id="@+id/quoteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:paddingBottom="16dp"
+                android:text="Inspiring quote goes here."
+                android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+                android:textColor="#c6302c" />
+
+            <TextView
+                android:id="@+id/authorTextView"
+                android:layout_width="196dp"
+                android:layout_height="59dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/abeezee"
+                android:gravity="center"
+                android:paddingBottom="24dp"
+                android:text="Author Name"
+                android:textAppearance="@style/TextAppearance.Material3.LabelLarge"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/btnslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624">
+
+        <!-- Refresh Button -->
+
+        <!-- Share Button -->
+
+        <!-- Save Button -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/refreshButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/refreshbtn"
+            android:text="REFRESH"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            app:backgroundTint="#dd7a5e" />
+
+        <ImageButton
+            android:id="@+id/shareButton"
+            android:layout_width="58dp"
+            android:layout_height="47dp"
+            android:layout_margin="8dp"
+            android:background="#ffe2c4"
+            android:src="@drawable/ic_action_share"
+            android:text="Share"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.787">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/favButton"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="#C51162"
+            android:text="Favs"
+            android:textColor="@android:color/white"
+            app:backgroundTint="#C51162"
+            app:iconTint="#60140D1E" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/saveButton"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/savebtndraw"
+        android:text="Save"
+        android:textColor="@android:color/white"
+        app:backgroundTint="#f7b168"
+        app:iconTint="#60140D1E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.709" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="252dp"
+        android:layout_height="74dp"
+        android:background="@drawable/btmmenu"
+        android:scrollIndicators="left"
+        app:itemIconTint="#671400"
+        app:itemTextColor="#320303"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

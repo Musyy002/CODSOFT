@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/colors.xml -->
+<resources>
+    <!-- Primary Colors -->
+    <color name="colorPrimary">#AEC6CF</color> <!-- Pastel Blue -->
+    <color name="colorPrimaryDark">#779ECB</color> <!-- A darker pastel blue -->
+    <color name="colorAccent">#FFB7C5</color> <!-- Pastel Pink -->
+
+    <!-- Background Colors -->
+    <color name="colorBackground">#FFF5E1</color> <!-- Light pastel beige -->
+    <color name="colorSurface">#FDFD96</color> <!-- Soft pastel yellow -->
+
+    <!-- Text Colors -->
+    <color name="colorTextPrimary">#333333</color> <!-- Dark gray for readability -->
+    <color name="colorTextSecondary">#666666</color> <!-- Medium gray for secondary text -->
+
+    <!-- Button and UI Element Colors -->
+    <color name="buttonBackground">#B0E57C</color> <!-- Pastel Green -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White for button text -->
+
+    <!-- Other Pastel Colors (for accents or highlights) -->
+    <color name="colorAccentLight">#FFDFD3</color> <!-- Light pastel pink -->
+    <color name="colorHighlight">#F7CAC9</color> <!-- Slightly darker pastel pink -->
+</resources>
